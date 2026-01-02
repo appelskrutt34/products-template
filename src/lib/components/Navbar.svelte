@@ -39,7 +39,7 @@
     fixed top-0 left-0 w-full z-50 justify-center
     {!whiteBg
       ? 'text-stone-100 backdrop-blur-lg border-b border-b-stone-500'
-      : 'bg-stone-200 text-stone-900'}
+      : 'bg-stone-200 text-stone-900 border-b border-b-stone-400'}
     transition duration-200 ease-in-out"
   >
     <div class="flex justify-center">
@@ -49,13 +49,13 @@
         onmouseover={() => (menuOpen = true)}
       >
         Products
-        <stone-900
+        <div
           class="
       absolute bottom-0 left-0 w-full h-0.5 bg-stone-900
       opacity-0 group-hover:opacity-100
       transition-all duration-300
     "
-        ></stone-900>
+        ></div>
       </button>
       <button
         class="relative p-6 text-center group"
@@ -63,13 +63,13 @@
         onmouseover={() => (menuOpen = true)}
       >
         Products
-        <stone-900
+        <div
           class="
       absolute bottom-0 left-0 w-full h-0.5 bg-stone-900
       opacity-0 group-hover:opacity-100
       transition-all duration-300
     "
-        ></stone-900>
+        ></div>
       </button>
     </div>
 
