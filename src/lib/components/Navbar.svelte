@@ -87,7 +87,7 @@
               >
                 <img
                   alt="deadmau5 icon"
-                  src="deadmau5-icon.png"
+                  src="/deadmau5-icon.png"
                   class="w-full content-fit"
                 />
               </div>

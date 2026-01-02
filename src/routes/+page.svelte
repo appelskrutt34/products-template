@@ -4,7 +4,7 @@
   import Jumbotron from "./sections/Jumbotron.svelte";
 </script>
 
-<main id="main" class="flex flex-col items-center h-[1600px] bg-stone-900">
+<main id="main" class="flex flex-col items-center bg-stone-900">
   <Jumbotron></Jumbotron>
   <Products></Products>
   <CartMenu></CartMenu>

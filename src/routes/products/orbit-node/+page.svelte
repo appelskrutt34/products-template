@@ -68,7 +68,7 @@
   <section class="h-screen flex flex-col items-center relative" id="trust">
     <h1 style="font-size: 100px">In Orbit Node we trust</h1>
     <img
-      class="w-[90%] h-[90%] absolute bottom-0 left-0 right-0 object-fit"
+      class="h-[89%] absolute bottom-0 object-fit"
       src="https://freepngimg.com/thumb/daft_punk/36597-7-daft-punk-image.png"
       alt=""
     />
