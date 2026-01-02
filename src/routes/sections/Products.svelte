@@ -11,8 +11,8 @@
   in:fade
   class="bg-stone-200 text-stone-900 w-full flex flex-col items-center py-24"
 >
-  <h1>Ledger Signers</h1>
-  <h2 class="mb-12">The world’s first secure hardware wallets</h2>
+  <h1>Orbit Gadgets</h1>
+  <h2 class="mb-12">World’s first smart gadgets for the future</h2>
   <div class="flex gap-6">
     {#each wallets as wallet}
       <!-- svelte-ignore a11y_click_events_have_key_events -->

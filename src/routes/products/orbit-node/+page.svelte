@@ -23,7 +23,7 @@
 
       <div class="text-right max-w-[50%] flex flex-col justify-between h-82">
         <div>
-          <h1>Ledger Strax</h1>
+          <h1>Orbit Node</h1>
           <p class="mb-8 text-lg font-semibold">
             The most elegant touchscreen signer for a premium crypto experience
             from every angle
@@ -66,7 +66,7 @@
   </div>
 
   <section class="h-screen flex flex-col items-center relative" id="trust">
-    <h1 style="font-size: 100px">In Ledger Stax we trust</h1>
+    <h1 style="font-size: 100px">In Orbit Node we trust</h1>
     <img
       class="w-[90%] h-[90%] absolute bottom-0 left-0 right-0 object-fit"
       src="https://freepngimg.com/thumb/daft_punk/36597-7-daft-punk-image.png"

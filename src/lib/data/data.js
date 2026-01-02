@@ -1,12 +1,12 @@
-export const legder_strax = "Ledger Strax";
-export const legder_flex = "Ledger Flex";
-export const legder_nano_x = "Ledger Nano X";
-export const legder_nano_s = "ledger Nano S Plus";
+export const orbit_node = "Orbit Node";
+export const orbit_nex = "Orbit Nex";
+export const orbit_prime = "Orbit Prime";
+export const orbit_ax_1 = "Orbit AX-1";
 
 export const wallets = [
   {
-    name: legder_strax,
-    link: "ledger-strax",
+    name: orbit_node,
+    link: "orbit-node",
     quote: "As unique as you are",
     qualities: [
       "Susan Karen Badges",
@@ -17,8 +17,8 @@ export const wallets = [
     stars: 4,
   },
   {
-    name: legder_flex,
-    link: "ledger-flex",
+    name: orbit_nex,
+    link: "orbit-nex",
     quote: "The new standard",
     qualities: [
       "Colors & Limited Editions",
@@ -29,9 +29,9 @@ export const wallets = [
     stars: 5,
   },
   {
-    name: legder_nano_x,
-    link: "ledger-nano",
-    quote: "Premium from every angle",
+    name: orbit_prime,
+    link: "orbit-prime",
+    quote: "Devices that think ahead",
     qualities: [
       "Personalize front and side",
       "3.7'' high res screen",
@@ -41,8 +41,8 @@ export const wallets = [
     stars: 5,
   },
   {
-    name: legder_nano_s,
-    link: "ledger-nano",
+    name: orbit_ax_1,
+    link: "orbit-ax-1",
     quote: "Stay at home backup",
     qualities: ["Cable use only"],
     price: 700,

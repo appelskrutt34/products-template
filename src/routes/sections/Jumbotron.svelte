@@ -5,7 +5,7 @@
   const shopCategories = [
     { name: "Hardware wallets", link: "hardware-wallets" },
     { name: "Accessories", link: "accessories" },
-    { name: "Bunldes & Packs", link: "bundles-and-packs" },
+    { name: "Gadgets", link: "gadgets" },
   ];
 </script>
 
@@ -13,11 +13,11 @@
   in:fade
   class="flex justify-center pt-22 bg-stone-950 text-stone-100 w-full bg-[linear-gradient(109deg,var(--color-stone-950)_11.64%,var(--color-stone-800)_49.04%,var(--color-stone-950)_86.45%,transparent_100%)]"
 >
-  <div class="container py-12 flex justify-between">
+  <div class="container py-10 flex justify-between">
     <div class="flex flex-col justify-between pt-8">
       <div>
-        <h1>Ledger Shop</h1>
-        <p class="text-lg font-semibold">The secure way to crypto</p>
+        <h1>Orbit Shop</h1>
+        <p class="text-lg font-semibold">Cool tech, no fluff</p>
       </div>
       <div class="flex gap-4">
         {#each shopCategories as category}

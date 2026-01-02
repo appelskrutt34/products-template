@@ -79,7 +79,7 @@
         in:slide={{ y: 10, duration: 200 }}
         out:slide={{ y: 10, duration: 200 }}
       >
-        <div class="container gap-16 flex text-stone-900">
+        <div class="container gap-16 flex text-stone-900 text-sm font-semibold">
           {#each wallets as wallet}
             <button class="flex flex-col items-center justify-center">
               <div
