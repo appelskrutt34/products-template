@@ -62,7 +62,35 @@
         onfocus={() => (menuOpen = true)}
         onmouseover={() => (menuOpen = true)}
       >
-        Products
+        Resources
+        <div
+          class="
+      absolute bottom-0 left-0 w-full h-0.5 bg-stone-900
+      opacity-0 group-hover:opacity-100
+      transition-all duration-300
+    "
+        ></div>
+      </button>
+      <button
+        class="relative px-6 text-center group"
+        onfocus={() => (menuOpen = true)}
+        onmouseover={() => (menuOpen = true)}
+      >
+        For Bussiness
+        <div
+          class="
+      absolute bottom-0 left-0 w-full h-0.5 bg-stone-900
+      opacity-0 group-hover:opacity-100
+      transition-all duration-300
+    "
+        ></div>
+      </button>
+      <button
+        class="relative px-6 text-center group"
+        onfocus={() => (menuOpen = true)}
+        onmouseover={() => (menuOpen = true)}
+      >
+        Support
         <div
           class="
       absolute bottom-0 left-0 w-full h-0.5 bg-stone-900

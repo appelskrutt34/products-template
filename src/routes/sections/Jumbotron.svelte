@@ -3,9 +3,9 @@
   import { fade } from "svelte/transition";
 
   const shopCategories = [
-    { name: "Hardware wallets", link: "hardware-wallets" },
-    { name: "Accessories", link: "accessories" },
-    { name: "Gadgets", link: "gadgets" },
+    { name: "Category One", link: "hardware-wallets" },
+    { name: "Category Two", link: "accessories" },
+    { name: "Category Three", link: "gadgets" },
   ];
 </script>
 
@@ -16,7 +16,7 @@
   <div class="container py-10 flex justify-between">
     <div class="flex flex-col justify-between pt-8">
       <div>
-        <h1>Orbit Shop</h1>
+        <h1>Shop Title</h1>
         <p class="text-lg font-semibold">Cool tech, no fluff</p>
       </div>
       <div class="flex gap-4">

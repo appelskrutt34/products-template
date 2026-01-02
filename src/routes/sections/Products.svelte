@@ -11,8 +11,8 @@
   in:fade
   class="bg-stone-200 text-stone-900 w-full flex flex-col items-center py-24"
 >
-  <h1>Orbit Gadgets</h1>
-  <h2 class="mb-12">World’s first smart gadgets for the future</h2>
+  <h1>Top Products</h1>
+  <h2 class="mb-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
   <div class="flex gap-6">
     {#each wallets as wallet}
       <!-- svelte-ignore a11y_click_events_have_key_events -->
@@ -48,7 +48,7 @@
           <button
             aria-label="Add to cart"
             onclick={() => addToCart(wallet)}
-            class="rounded-full bg-stone-900 p-2 hover:bg-stone-700 transition-colors duration-300 my-4"
+            class="rounded-full bg-stone-950 p-2 hover:bg-stone-700 transition-colors duration-300 my-4"
             ><Cart></Cart></button
           >
         </div>
