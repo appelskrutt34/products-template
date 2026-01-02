@@ -1,6 +1,11 @@
+export const legder_strax = "Ledger Strax";
+export const legder_flex = "Ledger Flex";
+export const legder_nano_x = "Ledger Nano X";
+export const legder_nano_s = "ledger Nano S Plus";
+
 export const wallets = [
   {
-    name: "ledger Strax",
+    name: legder_strax,
     link: "ledger-strax",
     quote: "As unique as you are",
     qualities: [
@@ -12,7 +17,7 @@ export const wallets = [
     stars: 4,
   },
   {
-    name: "ledger Flex",
+    name: legder_flex,
     link: "ledger-flex",
     quote: "The new standard",
     qualities: [
@@ -24,7 +29,7 @@ export const wallets = [
     stars: 5,
   },
   {
-    name: "ledger Nano X",
+    name: legder_nano_x,
     link: "ledger-nano",
     quote: "Premium from every angle",
     qualities: [
@@ -36,7 +41,7 @@ export const wallets = [
     stars: 5,
   },
   {
-    name: "ledger Nano S Plus",
+    name: legder_nano_s,
     link: "ledger-nano",
     quote: "Stay at home backup",
     qualities: ["Cable use only"],
