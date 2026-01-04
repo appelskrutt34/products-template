@@ -1,6 +1,7 @@
 <script>
   import { slide } from "svelte/transition";
   import { wallets } from "$lib/data/data";
+  import { darkmode } from "$lib/state/darkmode.state.svelte";
   let y = $state(0);
   let navOpen = $state(true);
   let lastScrollY = 0;
@@ -35,70 +36,80 @@
     onwheel={(e) => e.preventDefault()}
     in:slide={{ duration: 200 }}
     out:slide={{ duration: 200 }}
-    class="flex flex-col
+    class="flex flex-col items-center
     fixed top-0 left-0 w-full z-50 justify-center
-    {!whiteBg
-      ? 'text-stone-100 backdrop-blur-lg border-b border-b-stone-500'
-      : 'bg-stone-200 text-stone-900 border-b border-b-stone-400'}
+    {!darkmode.on
+      ? 'bg-stone-200 text-stone-900 border-b border-b-stone-400'
+      : !whiteBg
+        ? 'text-stone-100 backdrop-blur-lg border-b border-b-stone-500'
+        : 'bg-stone-200 text-stone-900 border-b border-b-stone-400'}
     transition duration-200 ease-in-out"
   >
-    <div class="h-22 flex justify-center">
-      <button
-        class="relative px-6 text-center group"
-        onfocus={() => (menuOpen = true)}
-        onmouseover={() => (menuOpen = true)}
+    <div class="h-22 flex flex-row items-center justify-between container">
+      <a
+        href="/"
+        class="border-2 border-transparent hover:border-stone-950 transition-colors p-2 rounded-full"
+        >Home</a
       >
-        Products
-        <div
-          class="
+      <div class="h-full">
+        <button
+          class="relative px-6 text-center group h-full"
+          onfocus={() => (menuOpen = true)}
+          onmouseover={() => (menuOpen = true)}
+        >
+          Products
+          <div
+            class="
       absolute bottom-0 left-0 w-full h-0.5 bg-stone-900
       opacity-0 group-hover:opacity-100
       transition-all duration-300
     "
-        ></div>
-      </button>
-      <button
-        class="relative px-6 text-center group"
-        onfocus={() => (menuOpen = true)}
-        onmouseover={() => (menuOpen = true)}
-      >
-        Resources
-        <div
-          class="
+          ></div>
+        </button>
+        <button
+          class="relative px-6 text-center group h-full"
+          onfocus={() => (menuOpen = true)}
+          onmouseover={() => (menuOpen = true)}
+        >
+          Resources
+          <div
+            class="
       absolute bottom-0 left-0 w-full h-0.5 bg-stone-900
       opacity-0 group-hover:opacity-100
       transition-all duration-300
     "
-        ></div>
-      </button>
-      <button
-        class="relative px-6 text-center group"
-        onfocus={() => (menuOpen = true)}
-        onmouseover={() => (menuOpen = true)}
-      >
-        For Bussiness
-        <div
-          class="
+          ></div>
+        </button>
+        <button
+          class="relative px-6 text-center group h-full"
+          onfocus={() => (menuOpen = true)}
+          onmouseover={() => (menuOpen = true)}
+        >
+          For Bussiness
+          <div
+            class="
       absolute bottom-0 left-0 w-full h-0.5 bg-stone-900
       opacity-0 group-hover:opacity-100
       transition-all duration-300
     "
-        ></div>
-      </button>
-      <button
-        class="relative px-6 text-center group"
-        onfocus={() => (menuOpen = true)}
-        onmouseover={() => (menuOpen = true)}
-      >
-        Support
-        <div
-          class="
+          ></div>
+        </button>
+        <button
+          class="relative px-6 text-center group h-full"
+          onfocus={() => (menuOpen = true)}
+          onmouseover={() => (menuOpen = true)}
+        >
+          Support
+          <div
+            class="
       absolute bottom-0 left-0 w-full h-0.5 bg-stone-900
       opacity-0 group-hover:opacity-100
       transition-all duration-300
     "
-        ></div>
-      </button>
+          ></div>
+        </button>
+      </div>
+      <div></div>
     </div>
 
     {#if menuOpen}
@@ -109,7 +120,10 @@
       >
         <div class="container gap-16 flex text-stone-900 text-sm font-semibold">
           {#each wallets as wallet}
-            <button class="flex flex-col items-center justify-center">
+            <a
+              href="/products/{wallet.link}"
+              class="flex flex-col items-center justify-center"
+            >
               <div
                 class="rounded-full w-18 p-3 bg-stone-900 transition-transform duration-300 hover:-translate-y-4 mb-1"
               >
@@ -121,7 +135,7 @@
               </div>
 
               {wallet.name}
-            </button>
+            </a>
           {/each}
         </div>
       </div>

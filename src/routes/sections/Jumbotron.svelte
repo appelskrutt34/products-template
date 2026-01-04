@@ -23,7 +23,7 @@
         {#each shopCategories as category}
           <a
             href="/{category.link}"
-            class="group flex flex-row rounded-full border hover:border-stone-100 border-stone-500 bg-stone-900 hover:bg-stone-800 text-stone-100 transition-colors duration-200"
+            class="group flex flex-row rounded-full border hover:border-stone-100 border-stone-500 bg-stone-900 hover:brightness-130 text-stone-100 transition-colors duration-200"
           >
             <div
               class="rounded-full flex items-center p-4 bg-stone-950 border border-stone-500 group-hover:border-stone-100 transition-colors duration-200"
