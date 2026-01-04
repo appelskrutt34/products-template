@@ -1,5 +1,5 @@
 <script>
-  import { wallets } from "$lib/data/data";
+  import { services } from "$lib/data/data";
   import { addToCart } from "$lib/state/cart.state.svelte";
   import { goto } from "$app/navigation";
   import { fade } from "svelte/transition";
@@ -14,13 +14,13 @@
   <h1>Top Products</h1>
   <h2 class="mb-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
   <div class="flex gap-6">
-    {#each wallets as wallet}
+    {#each services as service}
       <!-- svelte-ignore a11y_click_events_have_key_events -->
       <div
-        aria-label="Go to product {wallet.name}"
+        aria-label="Go to product {service.name}"
         tabindex="0"
         role="link"
-        onclick={() => goto("/products/" + wallet.link)}
+        onclick={() => goto("/products/" + service.link)}
         class="border border-stone-400 rounded-xs bg-stone-100 flex flex-col justify-between items-center h-[540px] hover:cursor-pointer hover:border-stone-800 transition-colors duration-300"
       >
         <div class="flex flex-col items-center w-full">
@@ -30,24 +30,13 @@
             alt=""
           />
 
-          <p class="font-bold text-xl mt-4">{wallet.name}</p>
-          <p class=" text-stone-700 mb-2">{wallet.quote}</p>
-          {#each wallet.qualities as quality}
-            <p class="my-1 bg-stone-200 px-2">{quality}</p>
-          {/each}
+          <p class="font-bold text-xl mt-4">{service.name}</p>
         </div>
 
         <div class="flex flex-col items-center w-full">
-          <div>
-            {#each [...Array(wallet.stars)] as _, i}
-              <Star></Star>
-            {/each}
-          </div>
-
-          <p>SEK {wallet.price}</p>
           <button
             aria-label="Add to cart"
-            onclick={() => addToCart(wallet)}
+            onclick={() => addToCart(service)}
             class="rounded-full bg-stone-950 p-2 hover:bg-stone-700 transition-colors duration-300 my-4"
             ><Cart></Cart></button
           >

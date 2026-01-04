@@ -2,11 +2,20 @@
   import Smiley from "$lib/components/icons/Smiley.svelte";
   import { fade } from "svelte/transition";
 
-  const shopCategories = [
-    { name: "Category One", link: "hardware-wallets" },
-    { name: "Category Two", link: "accessories" },
-    { name: "Category Three", link: "gadgets" },
+  const categories = [
+    { name: "Our Services", link: "#services" },
+    { name: "Contact Us", link: "#support" },
+    { name: "Questions and Answers", link: "#questions-and-answers" },
   ];
+
+  function scrollInto(id) {
+    let element = document.getElementById(id);
+    window.scrollTo({
+      top: element.offsetTop,
+      behavior: "smooth",
+      duration: 200,
+    });
+  }
 </script>
 
 <section
@@ -16,13 +25,13 @@
   <div class="container py-10 flex justify-between">
     <div class="flex flex-col justify-between pt-8">
       <div>
-        <h1>Shop Title</h1>
+        <h1>Software</h1>
         <p class="text-lg font-semibold">Cool tech, no fluff</p>
       </div>
       <div class="flex gap-4">
-        {#each shopCategories as category}
-          <a
-            href="/{category.link}"
+        {#each categories as category}
+          <button
+            onclick={() => scrollInto(category.link)}
             class="group flex flex-row rounded-full border hover:border-stone-100 border-stone-500 bg-stone-900 hover:brightness-130 text-stone-100 transition-colors duration-200"
           >
             <div
@@ -37,7 +46,7 @@
             <p class="py-2 px-4 text-center flex items-center">
               {category.name}
             </p>
-          </a>
+          </button>
         {/each}
       </div>
     </div>

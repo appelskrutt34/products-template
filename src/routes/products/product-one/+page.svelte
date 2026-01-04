@@ -2,6 +2,9 @@
   import Carousel from "$lib/components/Carousel.svelte";
   import ArrowDown from "$lib/components/icons/ArrowDown.svelte";
   import { fade } from "svelte/transition";
+  import { setDarkMode } from "$lib/state/darkmode.state.svelte";
+
+  setDarkMode(true);
 
   function scrollInto(id) {
     let element = document.getElementById(id);

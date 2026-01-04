@@ -26,13 +26,19 @@
     "before:opacity-100 after:opacity-100 after:translate-x-0";
 </script>
 
-<section class="py-28 flex justify-center bg-stone-950 w-full text-stone-100">
-  <div class="container flex gap-12 w-full">
-    <div class="space-y-4 w-[50%]">
-      {#each qas as qa, i}
-        <button
-          onclick={() => (currentQA = i)}
-          class="p-4 bg-linear-to-r from-stone-800 to-transparent flex items-center justify-between w-full hover:brightness-130 overflow-hidden relative pl-4 before:absolute before:left-0 before:top-0
+<section
+  class="py-28 flex justify-center bg-stone-950 w-full text-stone-100"
+  id="qa"
+>
+  <div class="container flex flex-col gap-12 w-full">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="flex gap-12 w-full">
+      <div class="space-y-4 w-[50%]">
+        {#each qas as qa, i}
+          <button
+            onclick={() => (currentQA = i)}
+            class="p-4 bg-linear-to-r from-stone-800 to-transparent flex items-center justify-between w-full hover:brightness-130 overflow-hidden relative pl-4 before:absolute before:left-0 before:top-0
     before:h-full before:w-0.5 before:bg-stone-100
     before:opacity-0
 
@@ -43,17 +49,16 @@
 
     before:transition-opacity before:duration-300
     after:transition-all after:duration-300
-
-    {i === currentQA ? activeClass : ''}
             {i == currentQA ? activeClass : ''}"
-        >
-          <p class="max-w-[80%] text-left">{qa.q}</p>
-          <ArrowRight></ArrowRight>
-        </button>
-      {/each}
-    </div>
-    <div class="w-[50%]">
-      <p>{qas[currentQA].a}</p>
+          >
+            <p class="max-w-[80%] text-left">{qa.q}</p>
+            <ArrowRight></ArrowRight>
+          </button>
+        {/each}
+      </div>
+      <div class="w-[50%]">
+        <p>{qas[currentQA].a}</p>
+      </div>
     </div>
   </div>
 </section>

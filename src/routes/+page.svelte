@@ -4,6 +4,7 @@
   import Jumbotron from "./sections/Jumbotron.svelte";
   import QA from "./sections/QA.svelte";
   import { setDarkMode } from "$lib/state/darkmode.state.svelte";
+  import Services from "./sections/Services.svelte";
 
   setDarkMode(true);
 </script>
@@ -12,5 +13,6 @@
   <Jumbotron></Jumbotron>
   <Products></Products>
   <CartMenu></CartMenu>
+  <Services></Services>
   <QA></QA>
 </main>

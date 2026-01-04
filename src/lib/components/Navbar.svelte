@@ -1,6 +1,6 @@
 <script>
   import { slide } from "svelte/transition";
-  import { wallets } from "$lib/data/data";
+  import { services } from "$lib/data/data";
   import { darkmode } from "$lib/state/darkmode.state.svelte";
   let y = $state(0);
   let navOpen = $state(true);
@@ -119,9 +119,9 @@
         out:slide={{ y: 10, duration: 200 }}
       >
         <div class="container gap-16 flex text-stone-900 text-sm font-semibold">
-          {#each wallets as wallet}
+          {#each services as service}
             <a
-              href="/products/{wallet.link}"
+              href="/products/{service.link}"
               class="flex flex-col items-center justify-center"
             >
               <div
@@ -134,7 +134,7 @@
                 />
               </div>
 
-              {wallet.name}
+              {service.name}
             </a>
           {/each}
         </div>
