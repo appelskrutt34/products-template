@@ -19,16 +19,13 @@
     <p class="mb-10">
       {service.description}
     </p>
-    <ul class="space-y-2">
+    <ul class="space-y-3">
       {#each service.features as feature}
         <li class="flex items-center gap-1"><Check></Check> {feature}</li>
       {/each}
     </ul>
   </div>
-
-  <img
-    class="w-88 object-fit flex-1"
-    src="https://freepngimg.com/thumb/daft_punk/36597-7-daft-punk-image.png"
-    alt=""
-  />
+  <div class="flex justify-center items-center flex-1">
+    <img class="object-fit h-[400px]" src={service.image} alt="" />
+  </div>
 </section>

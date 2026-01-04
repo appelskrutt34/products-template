@@ -1,8 +1,8 @@
 <script>
-  import Products from "./sections/Products.svelte";
+  import Stats from "./sections/Stats.svelte";
   import CartMenu from "$lib/components/CartMenu.svelte";
   import Jumbotron from "./sections/Jumbotron.svelte";
-  import QA from "./sections/QA.svelte";
+  import Support from "./sections/Support.svelte";
   import { setDarkMode } from "$lib/state/darkmode.state.svelte";
   import Services from "./sections/Services.svelte";
 
@@ -11,8 +11,8 @@
 
 <main id="main" class="flex flex-col items-center bg-stone-950">
   <Jumbotron></Jumbotron>
-  <Products></Products>
+  <Stats></Stats>
   <CartMenu></CartMenu>
   <Services></Services>
-  <QA></QA>
+  <Support></Support>
 </main>

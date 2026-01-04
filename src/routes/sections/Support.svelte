@@ -31,6 +31,10 @@
   id="qa"
 >
   <div class="container flex flex-col gap-12 w-full">
+    <div>
+      <div class="rounded-md p-4"></div>
+    </div>
+
     <h1>Frequently Asked Questions</h1>
 
     <div class="flex gap-12 w-full">
