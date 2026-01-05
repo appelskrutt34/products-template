@@ -4,6 +4,18 @@
   --dot-grid: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='none'%3e%3ccircle fill='currentColor' cx='10' cy='10' r='1.5'/%3e%3c/svg%3e");
 }
 
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+@theme {
+  --shadow-*: initial;
+  --shadow-sm: 2px 2px 0 0 #5b21b6;
+  --shadow-md: 4px 4px 0 0 #5b21b6;
+  --shadow-lg: 6px 6px 0 0 #5b21b6;
+  --shadow-none: 0 0 #0000;
+}
+
 .ascii {
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   white-space: pre;
@@ -13,13 +25,13 @@
 }
 
 h1 {
-  font-size: 45px;
-  font-weight: 700;
+  font-size: 55px;
+  font-weight: 800;
 }
 
 h2 {
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 button {

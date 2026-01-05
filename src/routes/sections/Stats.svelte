@@ -18,22 +18,22 @@
   in:fade
   class="bg-stone-200 text-stone-900 w-full flex flex-col items-center py-28"
 >
-  <div class="container">
-    <div class="flex justify-center mb-16">
+  <div class="container w-full">
+    <div class="flex justify-center mb-26 w-full">
       <div class="flex-1 text-center">
-        <p class="text-6xl font-bold mb-1">750 billion</p>
-        <p class="text-2xl font-semibold">Lines of code analyzed every day</p>
+        <p class="text-6xl font-extrabold mb-1">145+</p>
+        <p class="text-2xl font-semibold">Apps created</p>
       </div>
       <div class="flex-1 text-center">
-        <p class="text-6xl font-bold mb-1">180000+</p>
+        <p class="text-6xl font-extrabold mb-1">1800+</p>
         <p class="text-2xl font-semibold">Active projects</p>
       </div>
       <div class="flex-1 text-center">
-        <p class="text-6xl font-bold mb-1">7000+</p>
+        <p class="text-6xl font-extrabold mb-1">7000+</p>
         <p class="text-2xl font-semibold">Types of code issues detected</p>
       </div>
     </div>
-    <h1 class="text-left w-full mb-4">Trusted By</h1>
+    <h1 class="mb-4">Trusted By</h1>
     <div class="space-x-4">
       {#each trustedBy as logo}
         <img

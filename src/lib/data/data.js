@@ -15,7 +15,7 @@ export const services = [
     software: [
       {
         name: ".NET",
-        color: "bg-purple-700",
+        color: "bg-violet-700",
         link: "https://dotnet.microsoft.com/en-us/",
       },
       { name: "Node.js", color: "bg-green-700", link: "https://nodejs.org/en" },
@@ -44,7 +44,7 @@ export const services = [
     software: [
       {
         name: ".NET",
-        color: "bg-purple-700",
+        color: "bg-violet-700",
         link: "https://dotnet.microsoft.com/en-us/",
       },
       { name: "Node.js", color: "bg-green-700", link: "https://nodejs.org/en" },
@@ -72,7 +72,7 @@ export const services = [
     software: [
       {
         name: ".NET",
-        color: "bg-purple-700",
+        color: "bg-violet-700",
         link: "https://dotnet.microsoft.com/en-us/",
       },
       { name: "Node.js", color: "bg-green-700", link: "https://nodejs.org/en" },
