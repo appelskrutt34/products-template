@@ -31,7 +31,7 @@
   </div>
   {#key currentCategory}
     <div in:fade={{ duration: 300 }}>
-      <Service service={services[currentCategory]} />
+      <Service index={currentCategory} service={services[currentCategory]} />
     </div>
   {/key}
 </section>

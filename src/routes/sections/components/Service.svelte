@@ -1,6 +1,11 @@
 <script>
+  import Galaxy from "$lib/components/ascii/Galaxy.svelte";
+  import Planet from "$lib/components/ascii/Planet.svelte";
+  import Stars from "$lib/components/ascii/Stars.svelte";
+  import Stars2 from "$lib/components/ascii/Stars2.svelte";
   import Check from "$lib/components/icons/Check.svelte";
-  let { service } = $props();
+  import Star from "$lib/components/icons/Star.svelte";
+  let { service, index } = $props();
 </script>
 
 <section class="flex container py-24">
@@ -25,7 +30,15 @@
       {/each}
     </ul>
   </div>
-  <div class="flex justify-center items-center flex-1">
-    <img class="object-fit h-[400px]" src={service.image} alt="" />
+  <div class="flex justify-center items-center flex-1 relative">
+    {#if index === 0}
+      <Galaxy></Galaxy>
+    {:else if index === 1}
+      <Stars></Stars>
+    {:else if index === 2}
+      <Planet></Planet>
+    {:else if index === 3}
+      <Stars2></Stars2>
+    {/if}
   </div>
 </section>

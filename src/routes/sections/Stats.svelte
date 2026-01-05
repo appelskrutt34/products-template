@@ -37,7 +37,7 @@
     <div class="space-x-4">
       {#each trustedBy as logo}
         <img
-          class="h-32 object-fit inline-block saturate-0 hover:saturate-100 transition-all duration-300 bg-stone-800 hover:bg-stone-400 p-10 rounded-sm"
+          class="h-32 object-fit inline-block saturate-0 hover:saturate-100 transition-all duration-300 bg-stone-950 hover:bg-stone-500 p-10 rounded-sm"
           src={logo}
           alt=""
         />

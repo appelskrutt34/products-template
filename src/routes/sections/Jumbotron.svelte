@@ -1,5 +1,8 @@
 <script>
+  import Bubble from "$lib/components/icons/Bubble.svelte";
+  import Question from "$lib/components/icons/Question.svelte";
   import Smiley from "$lib/components/icons/Smiley.svelte";
+  import Star from "$lib/components/icons/Star.svelte";
   import { fade } from "svelte/transition";
 
   const categories = [
@@ -25,11 +28,11 @@
   <div class="container py-10 flex justify-between">
     <div class="flex flex-col justify-between pt-8">
       <div>
-        <h1>Software</h1>
+        <h1>Software Services</h1>
         <p class="text-lg font-semibold">Cool tech, no fluff</p>
       </div>
       <div class="flex gap-4">
-        {#each categories as category}
+        {#each categories as category, i}
           <button
             onclick={() => scrollInto(category.link)}
             class="group flex flex-row rounded-full border hover:border-stone-100 border-stone-500 bg-stone-900 hover:brightness-130 text-stone-100 transition-colors duration-200"
@@ -37,11 +40,13 @@
             <div
               class="rounded-full flex items-center p-4 bg-stone-950 border border-stone-500 group-hover:border-stone-100 transition-colors duration-200"
             >
-              <img
-                alt="deadmaus icon"
-                src="deadmau5-icon.png"
-                class="content-fit w-10"
-              />
+              {#if i === 0}
+                <Star></Star>
+              {:else if i === 1}
+                <Bubble></Bubble>
+              {:else}
+                <Question></Question>
+              {/if}
             </div>
             <p class="py-2 px-4 text-center flex items-center">
               {category.name}

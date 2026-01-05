@@ -1,8 +1,15 @@
 @import "tailwindcss";
 
-
 :root {
   --dot-grid: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='none'%3e%3ccircle fill='currentColor' cx='10' cy='10' r='1.5'/%3e%3c/svg%3e");
+}
+
+.ascii {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  white-space: pre;
+  line-height: 1.5;
+  letter-spacing: 0.5;
+  overflow: hidden;
 }
 
 h1 {
