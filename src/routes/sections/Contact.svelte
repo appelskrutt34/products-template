@@ -13,21 +13,21 @@
   <h1 class="mb-16">Contact Us</h1>
   <div class="container flex">
     <div class="flex-1">
-      <h2 class="mb-4">Subtitle Here</h2>
-      <p class="pr-8 mb-4">
+      <h2 class="mb-4 underline">Subtitle Here</h2>
+      <p class="pr-8 mb-4 text-violet-900">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat.
       </p>
       <ul class="space-y-4">
-        <li class="flex items-center gap-2 text-lg">
+        <li class="flex items-center gap-2 text-lg text-violet-900">
           <Phone></Phone> 076 01 01 111
         </li>
-        <li class="flex items-center gap-2 text-lg">
+        <li class="flex items-center gap-2 text-lg text-violet-900">
           <Pin></Pin> Huskvarna vägen 3, Huskvarna
         </li>
-        <li class="flex items-center gap-2 text-lg">
+        <li class="flex items-center gap-2 text-lg text-violet-900">
           <Email></Email> software@business.com
         </li>
       </ul>

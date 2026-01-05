@@ -38,7 +38,7 @@
         {#each qas as qa, i}
           <button
             onclick={() => (currentQA = i)}
-            class="p-4 bg-linear-to-r from-stone-800 to-transparent flex items-center justify-between w-full hover:brightness-130 overflow-hidden relative pl-4 before:absolute before:left-0 before:top-0
+            class="p-4 bg-linear-to-r from-stone-900 to-transparent flex items-center justify-between w-full hover:brightness-130 overflow-hidden relative pl-4 before:absolute before:left-0 before:top-0
     before:h-full before:w-0.5 before:bg-stone-100
     before:opacity-0
 
