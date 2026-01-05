@@ -8,13 +8,13 @@
 </script>
 
 <section class="w-full flex flex-col items-center text-stone-100" id="services">
-  <div class="border-stone-500 flex justify-center border-b w-full">
+  <div class="border-stone-500 flex justify-center border-b border-t w-full">
     <nav class="container">
       <div class="flex">
         {#each services as service, i}
           <button
             onclick={() => (currentCategory = i)}
-            class="text-center relative flex-1 group p-6 border-r border-stone-500 last:border-r-0"
+            class="text-center relative flex-1 group p-6 border-r border-stone-500 first:border-l"
           >
             {service.name}
             <div
