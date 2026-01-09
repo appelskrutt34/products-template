@@ -14,7 +14,7 @@
         {#each services as service, i}
           <button
             onclick={() => (currentCategory = i)}
-            class="text-center relative flex-1 group p-6 border-r border-stone-500 first:border-l"
+            class="text-center relative flex-1 group p-6 border-r border-stone-500 first:border-l border-b last:border-b-none md:border-b-0"
           >
             {service.name}
             <div
