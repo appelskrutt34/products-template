@@ -27,12 +27,11 @@
 </script>
 
 <section
-  class="py-28 flex justify-center bg-stone-950 w-full text-stone-100"
+  class="hidden py-28 md:flex justify-center bg-stone-950 w-full text-stone-100 px-6"
   id="qa"
 >
   <div class="container flex flex-col gap-12 w-full">
     <h1>Frequently Asked Questions</h1>
-
     <div class="flex gap-12 w-full">
       <div class="space-y-4 w-[50%]">
         {#each qas as qa, i}

@@ -9,8 +9,8 @@
 
 <section class="w-full flex flex-col items-center text-stone-100" id="services">
   <div class="border-stone-500 flex justify-center border-b border-t w-full">
-    <nav class="container">
-      <div class="flex">
+    <div class="container">
+      <nav class="flex flex-col md:flex-row" aria-label="Services">
         {#each services as service, i}
           <button
             onclick={() => (currentCategory = i)}
@@ -26,8 +26,8 @@
             ></div>
           </button>
         {/each}
-      </div>
-    </nav>
+      </nav>
+    </div>
   </div>
   {#key currentCategory}
     <div in:fade={{ duration: 300 }}>

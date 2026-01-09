@@ -11,9 +11,11 @@
 
 <section
   in:fade
-  class="bg-stone-100 text-stone-900 w-full flex flex-col items-center py-28 border-b border-stone-400"
+  class="bg-stone-100 text-stone-900 w-full py-28 border-b border-stone-400 px-6"
 >
-  <div class="container flex justify-center w-full">
+  <div
+    class="container flex md:flex-row gap-12 md:gap-0 flex-col justify-center w-full"
+  >
     <div class="flex-1 text-center">
       <p class="text-6xl font-extrabold mb-1">145+</p>
       <p class="text-2xl font-semibold">Apps launched</p>

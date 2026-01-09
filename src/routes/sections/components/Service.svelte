@@ -8,9 +8,9 @@
   let { service, index } = $props();
 </script>
 
-<section class="flex container py-24">
+<section class="flex lg:flex-row flex-col container py-24 px-6 gap-12">
   <div class="flex-1">
-    <div class="flex gap-2 mb-2">
+    <div class="md:flex hidden gap-2 mb-2">
       {#each service.software as software}
         <a
           target="_blank"

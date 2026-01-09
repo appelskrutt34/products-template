@@ -24,7 +24,7 @@
     class="bg-stone-950 p-4 rounded-full hover:bg-stone-500 group transition-colors duration-300"
     ><Linkedin
       size="24"
-      customClass="fill-stone-100 group-hover:fill-green-700 "
+      customClass="fill-stone-100 group-hover:fill-green-700 transition-colors duration-300"
     ></Linkedin></a
   >
   <a

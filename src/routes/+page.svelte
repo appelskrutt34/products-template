@@ -32,7 +32,7 @@
 <main id="main" class="flex flex-col items-center bg-stone-950">
   <section
     in:fade
-    class="flex justify-center pt-22 bg-stone-950 text-stone-100 w-full bg-[linear-gradient(109deg,var(--color-stone-950)_11.64%,var(--color-stone-800)_49.04%,var(--color-stone-950)_86.45%,transparent_100%)]"
+    class="flex justify-center pt-22 bg-stone-950 text-stone-100 w-full bg-[linear-gradient(109deg,var(--color-stone-950)_11.64%,var(--color-stone-800)_49.04%,var(--color-stone-950)_86.45%,transparent_100%)] px-6"
   >
     <div class="container py-28 flex flex-col">
       <h1>Software Solutions</h1>
