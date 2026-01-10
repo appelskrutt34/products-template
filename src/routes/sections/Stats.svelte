@@ -11,7 +11,7 @@
 
 <section
   in:fade
-  class="bg-stone-100 text-stone-900 w-full py-28 border-b border-stone-400 px-6"
+  class="bg-stone-100 text-stone-900 w-full py-16 md:py-28 border-b border-stone-400 flex justify-center px-6"
 >
   <div
     class="container flex md:flex-row gap-12 md:gap-0 flex-col justify-center w-full"

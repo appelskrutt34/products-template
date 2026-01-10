@@ -1,7 +1,7 @@
-<div class="w-full h-full flex justify-center items-center overflow-hidden">
+<div class="w-full flex justify-center overflow-hidden">
   <pre
     class="font-mono leading-tight whitespace-pre
-           scale-[0.4] md:scale-[0.8]
+           scale-[0.6] md:scale-[0.8]
            origin-center text-stone-300 drop-shadow-stone-800 drop-shadow-lg">
                                              ___
                                           ,o88888

@@ -11,7 +11,7 @@
     aria-label="Discord"
     href="#"
     target="_blank"
-    class="bg-stone-950 p-4 rounded-full hover:bg-stone-500 group transition-colors duration-300"
+    class="bg-stone-950 p-2 md:p-4 rounded-full hover:bg-stone-500 group transition-colors duration-300"
     ><Discord
       size="24"
       customClass="fill-stone-100 group-hover:fill-sky-700 transition-colors duration-300"
@@ -21,7 +21,7 @@
     aria-label="Linkedin"
     href="#"
     target="_blank"
-    class="bg-stone-950 p-4 rounded-full hover:bg-stone-500 group transition-colors duration-300"
+    class="bg-stone-950 p-2 md:p-4 rounded-full hover:bg-stone-500 group transition-colors duration-300"
     ><Linkedin
       size="24"
       customClass="fill-stone-100 group-hover:fill-green-700 transition-colors duration-300"
@@ -31,7 +31,7 @@
     aria-label="Instagram"
     href="#"
     target="_blank"
-    class="bg-stone-950 p-4 rounded-full hover:bg-stone-500 group transition-colors duration-300"
+    class="bg-stone-950 p-2 md:p-4 rounded-full hover:bg-stone-500 group transition-colors duration-300"
     ><Instagram
       size="24"
       customClass="fill-stone-100 group-hover:fill-purple-700 transition-colors duration-300"

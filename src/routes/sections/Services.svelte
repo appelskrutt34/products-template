@@ -30,7 +30,7 @@
     </div>
   </div>
   {#key currentCategory}
-    <div in:fade={{ duration: 300 }}>
+    <div in:fade={{ duration: 300 }} class="px-6 w-full flex justify-center">
       <Service index={currentCategory} service={services[currentCategory]} />
     </div>
   {/key}

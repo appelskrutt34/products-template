@@ -99,7 +99,7 @@
 {/if}
 <nav
   in:fade
-  class="md:hidden w-full fixed top-0 right-0 left-0 text-stone-100 bg-stone-900 border-b border-b-stone-500 z-20"
+  class="md:hidden w-full fixed top-0 right-0 left-0 text-stone-100 bg-stone-950 border-b border-b-stone-500 z-20"
 >
   <div class="flex justify-between p-6">
     <button

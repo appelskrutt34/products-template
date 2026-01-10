@@ -8,7 +8,7 @@
 
 <section
   id="contact"
-  class="w-full flex flex-col items-center bg-stone-100 py-28 text-violet-700 px-6"
+  class="w-full flex flex-col items-center bg-stone-100 py-16 md:py-28 text-violet-700 px-6"
 >
   <h1 class="mb-16">Contact Us</h1>
   <div class="container flex md:flex-row flex-col gap-12 md:gap-0">
