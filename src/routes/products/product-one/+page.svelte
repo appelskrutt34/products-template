@@ -1,5 +1,4 @@
 <script>
-  import Carousel from "$lib/components/Carousel.svelte";
   import ArrowDown from "$lib/components/icons/ArrowDown.svelte";
   import { fade } from "svelte/transition";
   import { setDarkMode } from "$lib/state/darkmode.state.svelte";
@@ -84,22 +83,6 @@
       <p class="mb-12">
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
       </p>
-      <Carousel>
-        {#each Array(10) as _}
-          <div class="mx-8">
-            <div
-              class={`w-16 h-16 rounded-full bg-stone-900 border border-stone-300`}
-            >
-              <img
-                class="w-full content-fit p-2 image-rendering-crisp-edges"
-                alt=""
-                src="/deadmau5-icon.png"
-                loading="lazy"
-              />
-            </div>
-          </div>
-        {/each}
-      </Carousel>
     </div>
   </section>
 </div>
