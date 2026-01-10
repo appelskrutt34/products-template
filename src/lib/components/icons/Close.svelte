@@ -1,7 +1,12 @@
+<script>
+  let { customClass, size } = $props();
+</script>
+
 <svg
-  class="fill-stone-900 hover:fill-stone-600 transition-colors duration-300"
-  width="24"
-  height="24"
+  class={customClass ??
+    "fill-stone-900 hover:fill-stone-600 transition-colors duration-300"}
+  width={size ?? "24"}
+  height={size ?? "24"}
   aria-hidden="true"
   xmlns="http://www.w3.org/2000/svg"
   viewBox="0 0 640 640"
