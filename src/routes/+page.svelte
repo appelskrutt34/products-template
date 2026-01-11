@@ -39,9 +39,9 @@
       <h2>High-quality engineering for web, apps, and cloud</h2>
     </div>
   </section>
-
-  <Services></Services>
   <Stats></Stats>
+  <Services></Services>
+
   <Contact></Contact>
   <QA></QA>
 </main>
